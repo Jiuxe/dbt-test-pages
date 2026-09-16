@@ -15,7 +15,7 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  doc-dbt:
+  build:
     runs-on: generate-document
     steps:
       - name: Checkout
@@ -33,7 +33,7 @@ jobs:
           path: target
 
   deploy:
-    needs: doc-dbt
+    needs: build
     runs-on: generate-document
     environment:
       name: github-pages
