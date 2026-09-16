@@ -15,7 +15,7 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  doc:
+  build:
     runs-on: generate-doc
     steps:
       - name: Checkout
@@ -41,7 +41,7 @@ jobs:
           path: target
 
   deploy:
-    needs: doc
+    needs: build
     runs-on: generate-doc
     environment:
       name: github-pages
