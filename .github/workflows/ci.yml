@@ -16,7 +16,7 @@ concurrency:
 
 jobs:
   build:
-    runs-on: generate-doc
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -42,7 +42,7 @@ jobs:
 
   deploy:
     needs: build
-    runs-on: generate-doc
+    runs-on: ubuntu-latest
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
