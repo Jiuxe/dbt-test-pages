@@ -1,0 +1,344 @@
+[0m10:51:03.485219 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77c5220caf00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77c522342780>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77c5220cb920>]}
+
+
+============================== 10:51:03.488042 | 8ce8a202-824c-4f20-ae7f-f6ad0a5c222e ==============================
+[0m10:51:03.488042 [info ] [MainThread]: Running with dbt=1.12.4
+[0m10:51:03.488450 [debug] [MainThread]: running dbt with arguments {'write_json': 'True', 'partial_parse': 'True', 'no_print': 'None', 'static_parser': 'True', 'profiles_dir': '/home/jiuxe/.dbt', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'debug': 'False', 'cache_selected_only': 'False', 'warn_error': 'None', 'hints_enabled': 'True', 'use_experimental_parser': 'False', 'fail_fast': 'False', 'log_path': 'logs', 'printer_width': '80', 'quiet': 'False', 'log_cache_events': 'False', 'empty': 'None', 'send_anonymous_usage_stats': 'True', 'version_check': 'True', 'maximum_seed_size_mib': '1', 'log_format': 'default', 'use_colors': 'True', 'introspect': 'True', 'indirect_selection': 'eager', 'invocation_command': 'dbt init .'}
+[0m10:51:15.250015 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+
+[0m10:51:15.252735 [error] [MainThread]: Traceback (most recent call last):
+  File "/home/jiuxe/Documentos/Repositorios/dbt-test-pages/.venv/lib/python3.12/site-packages/dbt/cli/requires.py", line 198, in wrapper
+    result, success = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jiuxe/Documentos/Repositorios/dbt-test-pages/.venv/lib/python3.12/site-packages/dbt/cli/requires.py", line 144, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jiuxe/Documentos/Repositorios/dbt-test-pages/.venv/lib/python3.12/site-packages/dbt/cli/main.py", line 504, in init
+    results = task.run()
+              ^^^^^^^^^^
+  File "/home/jiuxe/Documentos/Repositorios/dbt-test-pages/.venv/lib/python3.12/site-packages/dbt/task/init.py", line 340, in run
+    project_name = self.get_valid_project_name()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jiuxe/Documentos/Repositorios/dbt-test-pages/.venv/lib/python3.12/site-packages/dbt/task/init.py", line 281, in get_valid_project_name
+    name = click.prompt("Enter a name for your project (letters, digits, underscore)")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jiuxe/Documentos/Repositorios/dbt-test-pages/.venv/lib/python3.12/site-packages/click/termui.py", line 262, in prompt
+    value = prompt_func(prompt)
+            ^^^^^^^^^^^^^^^^^^^
+  File "/home/jiuxe/Documentos/Repositorios/dbt-test-pages/.venv/lib/python3.12/site-packages/click/termui.py", line 245, in prompt_func
+    raise Abort() from None
+click.exceptions.Abort
+
+[0m10:51:15.254735 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": false, "command_wall_clock_time": 11.826724, "process_in_blocks": "5512", "process_kernel_time": 0.084929, "process_mem_max_rss": "106028", "process_out_blocks": "16", "process_user_time": 1.026142}
+[0m10:51:15.255565 [debug] [MainThread]: Command `dbt init` failed at 10:51:15.255409 after 11.83 seconds
+[0m10:51:15.256172 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77c522342780>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77c52188b7a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77c5220c8b30>]}
+[0m10:51:15.256792 [debug] [MainThread]: Flushing usage events
+[0m10:51:16.095999 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m10:51:27.569160 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a8c9294b3b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a8c9373e330>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a8c9334df10>]}
+
+
+============================== 10:51:27.571634 | 70dbec16-7731-490c-94e6-8a4327b38ebe ==============================
+[0m10:51:27.571634 [info ] [MainThread]: Running with dbt=1.12.4
+[0m10:51:27.572046 [debug] [MainThread]: running dbt with arguments {'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'cache_selected_only': 'False', 'empty': 'None', 'log_path': 'logs', 'use_experimental_parser': 'False', 'no_print': 'None', 'version_check': 'True', 'warn_error': 'None', 'log_format': 'default', 'introspect': 'True', 'profiles_dir': '/home/jiuxe/.dbt', 'use_colors': 'True', 'maximum_seed_size_mib': '1', 'debug': 'False', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'quiet': 'False', 'indirect_selection': 'eager', 'printer_width': '80', 'static_parser': 'True', 'invocation_command': 'dbt init dbt_test_pages', 'hints_enabled': 'True', 'fail_fast': 'False', 'send_anonymous_usage_stats': 'True', 'target_path': 'None'}
+[0m10:51:27.579207 [debug] [MainThread]: Starter project path: /home/jiuxe/Documentos/Repositorios/dbt-test-pages/.venv/lib/python3.12/site-packages/dbt/include/starter_project
+[0m10:51:27.580553 [info ] [MainThread]: Setting up your profile.
+[0m10:51:37.608006 [info ] [MainThread]: Profile dbt_test_pages written to /home/jiuxe/.dbt/profiles.yml using target's sample configuration. Once updated, you'll be able to start developing with dbt.
+[0m10:51:37.608933 [info ] [MainThread]: Running dbt debug to validate the project...
+[0m10:51:37.609342 [info ] [MainThread]: dbt version: 1.12.4
+[0m10:51:37.609588 [info ] [MainThread]: python version: 3.12.3
+[0m10:51:37.609819 [info ] [MainThread]: python path: /home/jiuxe/Documentos/Repositorios/dbt-test-pages/.venv/bin/python
+[0m10:51:37.610036 [info ] [MainThread]: os info: Linux-6.11.0-25-generic-x86_64-with-glibc2.39
+[0m10:51:37.649834 [info ] [MainThread]: Using profiles dir at /home/jiuxe/.dbt
+[0m10:51:37.650237 [info ] [MainThread]: Using profiles.yml file at /home/jiuxe/.dbt/profiles.yml
+[0m10:51:37.650474 [info ] [MainThread]: Using dbt_project.yml file at /home/jiuxe/Documentos/Repositorios/dbt-test-pages/dbt_test_pages/dbt_project.yml
+[0m10:51:37.651449 [info ] [MainThread]: adapter type: duckdb
+[0m10:51:37.651738 [info ] [MainThread]: adapter version: 1.11.0
+[0m10:51:37.733215 [info ] [MainThread]: Configuration:
+[0m10:51:37.733613 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m10:51:37.733864 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m10:51:37.734079 [info ] [MainThread]: Required dependencies:
+[0m10:51:37.734308 [debug] [MainThread]: Executing "git --help"
+[0m10:51:37.736888 [debug] [MainThread]: STDOUT: "b"uso: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nEstos son comandos comunes de Git usados en varias situaciones:\n\ncomenzar un \xc3\xa1rea de trabajo (mira tambi\xc3\xa9n: git help tutorial)\n   clone     Clonar un repositorio dentro de un nuevo directorio\n   init      Crear un repositorio de Git vac\xc3\xado o reinicia el que ya existe\n\ntrabajar en los cambios actuales (mira tambi\xc3\xa9n: git help everyday)\n   add       Agregar contenido de archivos al \xc3\xadndice\n   mv        Mover o cambiar el nombre a archivos, directorios o enlaces simb\xc3\xb3licos\n   restore   Restaurar archivos del \xc3\xa1rbol de trabajo\n   rm        Borrar archivos del \xc3\xa1rbol de trabajo y del \xc3\xadndice\n\nexaminar el historial y el estado (mira tambi\xc3\xa9n: git help revisions)\n   bisect    Usar la b\xc3\xbasqueda binaria para encontrar el commit que introdujo el bug\n   diff      Mostrar los cambios entre commits, commit y \xc3\xa1rbol de trabajo, etc\n   grep      Imprimir las l\xc3\xadneas que concuerden con el patr\xc3\xb3n\n   log       Mostrar los logs de los commits\n   show      Mostrar varios tipos de objetos\n   status    Mostrar el estado del \xc3\xa1rbol de trabajo\n\ncrecer, marcar y ajustar tu historial com\xc3\xban\n   branch    Listar, crear, o borrar ramas\n   commit    Grabar los cambios al repositorio\n   merge     Juntar dos o m\xc3\xa1s historiales de desarrollo juntos\n   rebase    Volver a aplicar commits en la punta de otra rama\n   reset     Reiniciar el HEAD actual a un estado espec\xc3\xadfico\n   switch    Cambiar de branch\n   tag       Crear, listar, borrar o verificar un objeto de tag firmado con GPG\n\ncolaborar (mira tambi\xc3\xa9n: git help workflows)\n   fetch     Descargar objetos y referencias de otro repositorio\n   pull      Realizar un fetch e integra con otro repositorio o rama local\n   push      Actualizar referencias remotas junto con sus objetos asociados\n\n'git help -a' y 'git help -g' listan los subcomandos disponibles y algunas\ngu\xc3\xadas de concepto. Consulta 'git help <command>' o 'git help <concepto>'\npara leer sobre un subcomando o concepto espec\xc3\xadfico.\nMira 'git help git' para una vista general del sistema.\n""
+[0m10:51:37.737233 [debug] [MainThread]: STDERR: "b''"
+[0m10:51:37.737458 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m10:51:37.737681 [info ] [MainThread]: Connection:
+[0m10:51:37.737899 [info ] [MainThread]:   database: dev
+[0m10:51:37.738098 [info ] [MainThread]:   schema: main
+[0m10:51:37.738294 [info ] [MainThread]:   path: dev.duckdb
+[0m10:51:37.738486 [info ] [MainThread]:   config_options: None
+[0m10:51:37.738690 [info ] [MainThread]:   extensions: None
+[0m10:51:37.738892 [info ] [MainThread]:   settings: {}
+[0m10:51:37.739087 [info ] [MainThread]:   external_root: .
+[0m10:51:37.739284 [info ] [MainThread]:   use_credential_provider: None
+[0m10:51:37.739479 [info ] [MainThread]:   attach: None
+[0m10:51:37.739677 [info ] [MainThread]:   filesystems: None
+[0m10:51:37.739879 [info ] [MainThread]:   remote: None
+[0m10:51:37.740074 [info ] [MainThread]:   plugins: None
+[0m10:51:37.740267 [info ] [MainThread]:   disable_transactions: False
+[0m10:51:37.740566 [info ] [MainThread]: Registered adapter: duckdb=1.11.0
+[0m10:51:37.792875 [debug] [MainThread]: Acquiring new duckdb connection 'debug'
+[0m10:51:37.806429 [debug] [MainThread]: Using duckdb connection "debug"
+[0m10:51:37.806755 [debug] [MainThread]: On debug: select 1 as id
+[0m10:51:37.806988 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m10:51:37.823213 [debug] [MainThread]: SQL status: OK in 0.016 seconds
+[0m10:51:37.823949 [debug] [MainThread]: On debug: Close
+[0m10:51:37.824240 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m10:51:37.824490 [info ] [MainThread]: [32mAll checks passed![0m
+[0m10:51:37.824751 [info ] [MainThread]: Your new dbt project "dbt_test_pages" was created!
+Initialized new project in /home/jiuxe/Documentos/Repositorios/dbt-test-pages/dbt_test_pages/dbt_test_pages
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m10:51:37.825351 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 10.313067, "process_in_blocks": "312", "process_kernel_time": 0.119713, "process_mem_max_rss": "148892", "process_out_blocks": "120", "process_user_time": 1.219084}
+[0m10:51:37.825719 [debug] [MainThread]: Command `dbt init` succeeded at 10:51:37.825649 after 10.31 seconds
+[0m10:51:37.825963 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m10:51:37.826225 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a8c9281bef0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a8c9269cd70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a8c88802ae0>]}
+[0m10:51:37.826512 [debug] [MainThread]: Flushing usage events
+[0m10:51:38.624358 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m10:53:31.172315 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0c53940bc0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0c53940c80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0c53940b90>]}
+
+
+============================== 10:53:31.174427 | 9d80a118-1166-431e-bedc-6ef1d62adba7 ==============================
+[0m10:53:31.174427 [info ] [MainThread]: Running with dbt=1.12.4
+[0m10:53:31.174866 [debug] [MainThread]: running dbt with arguments {'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'use_experimental_parser': 'False', 'maximum_seed_size_mib': '1', 'no_print': 'None', 'log_cache_events': 'False', 'quiet': 'False', 'send_anonymous_usage_stats': 'True', 'log_path': '/home/jiuxe/Documentos/Repositorios/dbt-test-pages/logs', 'empty': 'None', 'fail_fast': 'False', 'hints_enabled': 'True', 'printer_width': '80', 'invocation_command': 'dbt docs generate', 'static_parser': 'True', 'use_colors': 'True', 'partial_parse': 'True', 'debug': 'False', 'write_json': 'True', 'warn_error': 'None', 'cache_selected_only': 'False', 'indirect_selection': 'eager', 'profiles_dir': '/home/jiuxe/.dbt', 'log_format': 'default', 'target_path': 'None', 'introspect': 'True', 'version_check': 'True'}
+[0m10:53:31.346276 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '9d80a118-1166-431e-bedc-6ef1d62adba7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0c551945c0>]}
+[0m10:53:31.396847 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '9d80a118-1166-431e-bedc-6ef1d62adba7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0c499e1df0>]}
+[0m10:53:31.398203 [info ] [MainThread]: Registered adapter: duckdb=1.11.0
+[0m10:53:31.455683 [debug] [MainThread]: checksum: 3c1265610c8fd26ab8ffaf6f5570d5795393f4cfb0e83afaf634c47034e19ae7, vars: {}, profile: dbt_test_pages, target: dev, version: 1.12.4
+[0m10:53:31.456208 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m10:53:31.456490 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '9d80a118-1166-431e-bedc-6ef1d62adba7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0c53808e30>]}
+[0m10:53:32.520063 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '9d80a118-1166-431e-bedc-6ef1d62adba7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0c4224bda0>]}
+[0m10:53:32.529524 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '9d80a118-1166-431e-bedc-6ef1d62adba7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0c4229fcb0>]}
+[0m10:53:32.529938 [info ] [MainThread]: Found 2 models, 4 data tests, 500 macros
+[0m10:53:32.530218 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '9d80a118-1166-431e-bedc-6ef1d62adba7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0c53856930>]}
+[0m10:53:32.531618 [info ] [MainThread]: 
+[0m10:53:32.531938 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m10:53:32.532184 [info ] [MainThread]: 
+[0m10:53:32.532565 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m10:53:32.536417 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_dev_main'
+[0m10:53:32.561132 [debug] [ThreadPool]: Using duckdb connection "list_dev_main"
+[0m10:53:32.561506 [debug] [ThreadPool]: On list_dev_main: BEGIN
+[0m10:53:32.561759 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m10:53:32.570842 [debug] [ThreadPool]: SQL status: OK in 0.009 seconds
+[0m10:53:32.571226 [debug] [ThreadPool]: Using duckdb connection "list_dev_main"
+[0m10:53:32.571478 [debug] [ThreadPool]: On list_dev_main: /* {"app": "dbt", "dbt_version": "1.12.4", "profile_name": "dbt_test_pages", "target_name": "dev", "connection_name": "list_dev_main"} */
+select
+      'dev' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'main'
+    and lower(table_catalog) = 'dev'
+  
+[0m10:53:32.574015 [debug] [ThreadPool]: SQL status: OK in 0.002 seconds
+[0m10:53:32.575027 [debug] [ThreadPool]: On list_dev_main: ROLLBACK
+[0m10:53:32.575471 [debug] [ThreadPool]: On list_dev_main: Close
+[0m10:53:32.576174 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '9d80a118-1166-431e-bedc-6ef1d62adba7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0c42291d60>]}
+[0m10:53:32.578804 [debug] [Thread-1 (]: Began running node model.dbt_test_pages.my_first_dbt_model
+[0m10:53:32.579568 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_dev_main, now model.dbt_test_pages.my_first_dbt_model)
+[0m10:53:32.580164 [debug] [Thread-1 (]: Began compiling node model.dbt_test_pages.my_first_dbt_model
+[0m10:53:32.585466 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_test_pages.my_first_dbt_model"
+[0m10:53:32.586063 [debug] [Thread-1 (]: Began executing node model.dbt_test_pages.my_first_dbt_model
+[0m10:53:32.586653 [debug] [Thread-1 (]: Finished running node model.dbt_test_pages.my_first_dbt_model
+[0m10:53:32.587486 [debug] [Thread-1 (]: Began running node model.dbt_test_pages.my_second_dbt_model
+[0m10:53:32.587875 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_test_pages.my_first_dbt_model, now model.dbt_test_pages.my_second_dbt_model)
+[0m10:53:32.588161 [debug] [Thread-1 (]: Began compiling node model.dbt_test_pages.my_second_dbt_model
+[0m10:53:32.589544 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_test_pages.my_second_dbt_model"
+[0m10:53:32.590092 [debug] [Thread-1 (]: Began executing node model.dbt_test_pages.my_second_dbt_model
+[0m10:53:32.590702 [debug] [Thread-1 (]: Finished running node model.dbt_test_pages.my_second_dbt_model
+[0m10:53:32.591004 [debug] [Thread-1 (]: Began running node test.dbt_test_pages.not_null_my_first_dbt_model_id.5fb22c2710
+[0m10:53:32.591405 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_test_pages.my_second_dbt_model, now test.dbt_test_pages.not_null_my_first_dbt_model_id.5fb22c2710)
+[0m10:53:32.591764 [debug] [Thread-1 (]: Began compiling node test.dbt_test_pages.not_null_my_first_dbt_model_id.5fb22c2710
+[0m10:53:32.611191 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_test_pages.not_null_my_first_dbt_model_id.5fb22c2710"
+[0m10:53:32.612475 [debug] [Thread-1 (]: Began executing node test.dbt_test_pages.not_null_my_first_dbt_model_id.5fb22c2710
+[0m10:53:32.613876 [debug] [Thread-1 (]: Finished running node test.dbt_test_pages.not_null_my_first_dbt_model_id.5fb22c2710
+[0m10:53:32.614471 [debug] [Thread-1 (]: Began running node test.dbt_test_pages.unique_my_first_dbt_model_id.16e066b321
+[0m10:53:32.615180 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_test_pages.not_null_my_first_dbt_model_id.5fb22c2710, now test.dbt_test_pages.unique_my_first_dbt_model_id.16e066b321)
+[0m10:53:32.615753 [debug] [Thread-1 (]: Began compiling node test.dbt_test_pages.unique_my_first_dbt_model_id.16e066b321
+[0m10:53:32.625160 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_test_pages.unique_my_first_dbt_model_id.16e066b321"
+[0m10:53:32.625740 [debug] [Thread-1 (]: Began executing node test.dbt_test_pages.unique_my_first_dbt_model_id.16e066b321
+[0m10:53:32.626355 [debug] [Thread-1 (]: Finished running node test.dbt_test_pages.unique_my_first_dbt_model_id.16e066b321
+[0m10:53:32.626696 [debug] [Thread-1 (]: Began running node test.dbt_test_pages.not_null_my_second_dbt_model_id.151b76d778
+[0m10:53:32.627032 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_test_pages.unique_my_first_dbt_model_id.16e066b321, now test.dbt_test_pages.not_null_my_second_dbt_model_id.151b76d778)
+[0m10:53:32.627364 [debug] [Thread-1 (]: Began compiling node test.dbt_test_pages.not_null_my_second_dbt_model_id.151b76d778
+[0m10:53:32.633307 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_test_pages.not_null_my_second_dbt_model_id.151b76d778"
+[0m10:53:32.634207 [debug] [Thread-1 (]: Began executing node test.dbt_test_pages.not_null_my_second_dbt_model_id.151b76d778
+[0m10:53:32.635235 [debug] [Thread-1 (]: Finished running node test.dbt_test_pages.not_null_my_second_dbt_model_id.151b76d778
+[0m10:53:32.635814 [debug] [Thread-1 (]: Began running node test.dbt_test_pages.unique_my_second_dbt_model_id.57a0f8c493
+[0m10:53:32.636452 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_test_pages.not_null_my_second_dbt_model_id.151b76d778, now test.dbt_test_pages.unique_my_second_dbt_model_id.57a0f8c493)
+[0m10:53:32.637074 [debug] [Thread-1 (]: Began compiling node test.dbt_test_pages.unique_my_second_dbt_model_id.57a0f8c493
+[0m10:53:32.644741 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_test_pages.unique_my_second_dbt_model_id.57a0f8c493"
+[0m10:53:32.645556 [debug] [Thread-1 (]: Began executing node test.dbt_test_pages.unique_my_second_dbt_model_id.57a0f8c493
+[0m10:53:32.646636 [debug] [Thread-1 (]: Finished running node test.dbt_test_pages.unique_my_second_dbt_model_id.57a0f8c493
+[0m10:53:32.647884 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m10:53:32.648430 [debug] [MainThread]: Connection 'test.dbt_test_pages.unique_my_second_dbt_model_id.57a0f8c493' was properly closed.
+[0m10:53:32.650394 [debug] [MainThread]: Command end result
+[0m10:53:32.715415 [debug] [MainThread]: Wrote artifact WritableManifest to /home/jiuxe/Documentos/Repositorios/dbt-test-pages/target/manifest.json
+[0m10:53:32.717223 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/jiuxe/Documentos/Repositorios/dbt-test-pages/target/semantic_manifest.json
+[0m10:53:32.725744 [debug] [MainThread]: Wrote artifact OsiDocument to /home/jiuxe/Documentos/Repositorios/dbt-test-pages/target/osi_document.json
+[0m10:53:32.730783 [debug] [MainThread]: Wrote artifact RunExecutionResult to /home/jiuxe/Documentos/Repositorios/dbt-test-pages/target/run_results.json
+[0m10:53:32.731847 [debug] [MainThread]: Acquiring new duckdb connection 'generate_catalog'
+[0m10:53:32.732095 [info ] [MainThread]: Building catalog
+[0m10:53:32.737988 [debug] [ThreadPool]: Acquiring new duckdb connection 'dev.information_schema'
+[0m10:53:32.747415 [debug] [ThreadPool]: Using duckdb connection "dev.information_schema"
+[0m10:53:32.747844 [debug] [ThreadPool]: On dev.information_schema: /* {"app": "dbt", "dbt_version": "1.12.4", "profile_name": "dbt_test_pages", "target_name": "dev", "connection_name": "dev.information_schema"} */
+
+    
+    with tables as (
+      select *
+    from (
+        select
+            t.database_name as table_database,
+            t.schema_name as table_schema,
+            t.table_name as table_name,
+            'BASE TABLE' as table_type,
+            t.comment as table_comment
+        from duckdb_tables() t
+        where upper(t.database_name) = upper('dev')
+
+        union all
+
+        select
+            v.database_name as table_database,
+            v.schema_name as table_schema,
+            v.view_name as table_name,
+            'VIEW' as table_type,
+            v.comment as table_comment
+        from duckdb_views() v
+        where upper(v.database_name) = upper('dev')
+    ) catalog_tables
+      
+        where (
+
+                (
+                    upper(table_schema) = upper('main')
+                    and upper(table_name) = upper('my_second_dbt_model')
+                ) or 
+
+                (
+                    upper(table_schema) = upper('main')
+                    and upper(table_name) = upper('my_first_dbt_model')
+                ))
+    
+    ),
+    columns as (
+      select *
+    from (
+        select
+            c.database_name as table_database,
+            c.schema_name as table_schema,
+            c.table_name as table_name,
+            c.column_name as column_name,
+            c.column_index as column_index,
+            c.data_type as column_type,
+            c.comment as column_comment
+        from duckdb_columns() c
+        where upper(c.database_name) = upper('dev')
+    ) catalog_columns
+      
+        where (
+
+                (
+                    upper(table_schema) = upper('main')
+                    and upper(table_name) = upper('my_second_dbt_model')
+                ) or 
+
+                (
+                    upper(table_schema) = upper('main')
+                    and upper(table_name) = upper('my_first_dbt_model')
+                ))
+    
+    )
+    select
+        tables.table_database,
+        tables.table_schema,
+        tables.table_name,
+        tables.table_type,
+        tables.table_comment,
+        columns.column_name,
+        columns.column_index,
+        columns.column_type,
+        columns.column_comment,
+        null as table_owner
+    from tables
+    join columns using (table_database, table_schema, table_name)
+    order by table_schema, table_name, column_index
+  
+  
+[0m10:53:32.748148 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m10:53:32.764828 [debug] [ThreadPool]: SQL status: OK in 0.017 seconds
+[0m10:53:32.766368 [debug] [ThreadPool]: On dev.information_schema: Close
+[0m10:53:32.768953 [debug] [MainThread]: Wrote artifact CatalogArtifact to /home/jiuxe/Documentos/Repositorios/dbt-test-pages/target/catalog.json
+[0m10:53:32.787046 [debug] [MainThread]: Wrote artifact WritableManifest to /home/jiuxe/Documentos/Repositorios/dbt-test-pages/target/manifest.json
+[0m10:53:32.788919 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/jiuxe/Documentos/Repositorios/dbt-test-pages/target/semantic_manifest.json
+[0m10:53:32.790621 [debug] [MainThread]: Wrote artifact OsiDocument to /home/jiuxe/Documentos/Repositorios/dbt-test-pages/target/osi_document.json
+[0m10:53:32.790885 [info ] [MainThread]: Catalog written to /home/jiuxe/Documentos/Repositorios/dbt-test-pages/target/catalog.json
+[0m10:53:32.791522 [debug] [MainThread]: Resource report: {"command_name": "generate", "command_success": true, "command_wall_clock_time": 1.6781819, "process_in_blocks": "192", "process_kernel_time": 0.129985, "process_mem_max_rss": "168736", "process_out_blocks": "7272", "process_user_time": 2.599718}
+[0m10:53:32.791911 [debug] [MainThread]: Command `dbt docs generate` succeeded at 10:53:32.791843 after 1.68 seconds
+[0m10:53:32.792150 [debug] [MainThread]: Connection 'generate_catalog' was properly closed.
+[0m10:53:32.792376 [debug] [MainThread]: Connection 'dev.information_schema' was properly closed.
+[0m10:53:32.792631 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0c42203740>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0c423b26f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0c499bdeb0>]}
+[0m10:53:32.792908 [debug] [MainThread]: Flushing usage events
+[0m10:53:33.615702 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m10:53:56.131467 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7712d7085670>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7712d7894c20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7712d7085610>]}
+
+
+============================== 10:53:56.135373 | 58c3d4de-81ca-43f0-9ec1-08a0f87c69b0 ==============================
+[0m10:53:56.135373 [info ] [MainThread]: Running with dbt=1.12.4
+[0m10:53:56.136200 [debug] [MainThread]: running dbt with arguments {'partial_parse': 'True', 'use_colors': 'True', 'send_anonymous_usage_stats': 'True', 'indirect_selection': 'eager', 'printer_width': '80', 'use_experimental_parser': 'False', 'hints_enabled': 'True', 'maximum_seed_size_mib': '1', 'introspect': 'True', 'static_parser': 'True', 'write_json': 'True', 'log_path': '/home/jiuxe/Documentos/Repositorios/dbt-test-pages/logs', 'profiles_dir': '/home/jiuxe/.dbt', 'empty': 'None', 'version_check': 'True', 'warn_error': 'None', 'quiet': 'False', 'fail_fast': 'False', 'target_path': 'None', 'log_cache_events': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'debug': 'False', 'log_format': 'default', 'no_print': 'None', 'cache_selected_only': 'False', 'invocation_command': 'dbt docs serve'}
+[0m10:53:56.300265 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '58c3d4de-81ca-43f0-9ec1-08a0f87c69b0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7712cc6661e0>]}
+[0m10:53:56.349712 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '58c3d4de-81ca-43f0-9ec1-08a0f87c69b0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7712d7d60260>]}
+[0m10:54:21.219849 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+
+[0m10:54:21.228765 [error] [MainThread]: Traceback (most recent call last):
+  File "/home/jiuxe/Documentos/Repositorios/dbt-test-pages/.venv/lib/python3.12/site-packages/dbt/cli/requires.py", line 198, in wrapper
+    result, success = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jiuxe/Documentos/Repositorios/dbt-test-pages/.venv/lib/python3.12/site-packages/dbt/cli/requires.py", line 144, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jiuxe/Documentos/Repositorios/dbt-test-pages/.venv/lib/python3.12/site-packages/dbt/cli/requires.py", line 295, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jiuxe/Documentos/Repositorios/dbt-test-pages/.venv/lib/python3.12/site-packages/dbt/cli/requires.py", line 340, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jiuxe/Documentos/Repositorios/dbt-test-pages/.venv/lib/python3.12/site-packages/dbt/cli/requires.py", line 387, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jiuxe/Documentos/Repositorios/dbt-test-pages/.venv/lib/python3.12/site-packages/dbt/cli/main.py", line 323, in docs_serve
+    results = task.run()
+              ^^^^^^^^^^
+  File "/home/jiuxe/Documentos/Repositorios/dbt-test-pages/.venv/lib/python3.12/site-packages/dbt/task/docs/serve.py", line 29, in run
+    httpd.serve_forever()
+  File "/usr/lib/python3.12/socketserver.py", line 235, in serve_forever
+    ready = selector.select(poll_interval)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/selectors.py", line 415, in select
+    fd_event_list = self._selector.poll(timeout)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+
+[0m10:54:21.230410 [debug] [MainThread]: Resource report: {"command_name": "serve", "command_success": false, "command_wall_clock_time": 25.155972, "process_in_blocks": "3760", "process_kernel_time": 0.092006, "process_mem_max_rss": "142884", "process_out_blocks": "3568", "process_user_time": 1.24609}
+[0m10:54:21.231432 [debug] [MainThread]: Command `dbt docs serve` failed at 10:54:21.231240 after 25.16 seconds
+[0m10:54:21.232219 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7712d770fe30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7712cc13da90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7712cc611b80>]}
+[0m10:54:21.233026 [debug] [MainThread]: Flushing usage events
+[0m10:54:21.948704 [debug] [MainThread]: An error was encountered while trying to flush usage events
